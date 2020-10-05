@@ -21,6 +21,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnitTestProjectServiceLaye
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnitTestProjectControllers", "NUnitTestProjectControllers\NUnitTestProjectControllers.csproj", "{E7091C9D-3386-4BC4-8431-DB7B04F5DB72}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppDALMoq", "ConsoleAppDALMoq\ConsoleAppDALMoq.csproj", "{5488F628-A86E-4FB2-A5DB-00C4F3DE161D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTestProjectDAL", "NUnitTestProjectDAL\NUnitTestProjectDAL.csproj", "{55971F56-A573-4D24-8498-2091B420B883}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{E7091C9D-3386-4BC4-8431-DB7B04F5DB72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7091C9D-3386-4BC4-8431-DB7B04F5DB72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7091C9D-3386-4BC4-8431-DB7B04F5DB72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5488F628-A86E-4FB2-A5DB-00C4F3DE161D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5488F628-A86E-4FB2-A5DB-00C4F3DE161D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5488F628-A86E-4FB2-A5DB-00C4F3DE161D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5488F628-A86E-4FB2-A5DB-00C4F3DE161D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55971F56-A573-4D24-8498-2091B420B883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55971F56-A573-4D24-8498-2091B420B883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55971F56-A573-4D24-8498-2091B420B883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55971F56-A573-4D24-8498-2091B420B883}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

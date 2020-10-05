@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ConsoleIntro.Interfaces
+﻿namespace ConsoleIntro.Interfaces
 {
     public interface IAnimal
     {

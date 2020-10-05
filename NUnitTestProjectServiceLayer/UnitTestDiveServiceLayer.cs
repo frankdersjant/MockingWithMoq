@@ -36,11 +36,12 @@ namespace NUnitTestProjectServiceLayer
             _diverepositoryMock.Setup(m => m.GetAll()).Returns(_Dives);
 
             //act
-            var result = _divingService.GetAll();
+            IEnumerable<Dive> result = _divingService.GetAll();
            
 
             //Assert
             Assert.AreEqual(result.Count(), 2);
+            Assert.That(result, Is.InstanceOf(typeof(IEnumerable<Dive>))); 
 
             //Check that the GetAll method was called once
             _diverepositoryMock.Verify(c => c.GetAll(), Times.Once);

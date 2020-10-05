@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Moq;
 using NUnit.Framework;
 using ServiceLayer;
+using System.Collections.Generic;
+using System.Web.Http.Results;
 using WebApplMoqIntro.Controllers;
 
 namespace NUnitTestProjectControllers
@@ -23,10 +25,14 @@ namespace NUnitTestProjectControllers
         {
             // Act
             var okResult = _divesController.GetDives();
-
+            var resultDives = _divesController.GetDives() as OkNegotiatedContentResult<List<Dive>>;
+            
             // Assert
             Assert.IsAssignableFrom<OkObjectResult>(okResult);
-          //  Assert.IsInstanceOf<OkResult>(okResult);
+            //  Assert.IsInstanceOf<OkResult>(okResult);
+
+            Assert.IsNotNull(resultDives);
+            Assert.AreEqual(2, resultDives.Content.Count);
         }
 
         [Test]
